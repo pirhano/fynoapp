@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/listViewItemInternPadding"
+    android:layout_marginBottom="@dimen/listViewItemMargin"
+    android:background="@drawable/rounded_layout_white_radius_5">
+
+    <CheckBox
+        android:id="@+id/check_trip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:padding="8dp"/>
+
+    <!--<ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_parking_color_36"
+        android:padding="5dp"
+        android:layout_marginRight="12dp"
+        android:layout_gravity="center"/>-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_trip_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/unavailable"
+            android:textSize="14sp"
+            android:textColor="@color/vehicle_sub_menu"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/tv_trip_max_speed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:text="@string/unavailable" />
+
+        <TextView
+            android:id="@+id/tv_trip_distance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/unavailable"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:layout_gravity="end"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>

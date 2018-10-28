@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/container1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:paddingTop="10dp"
+            android:gravity="center"
+            android:background="@drawable/side_nav_bar"
+            android:paddingBottom="50dp">
+
+
+            <ImageView
+                android:id="@+id/iv_user_image_profile"
+                android:layout_width="wrap_content"
+                android:layout_height="70dp"
+                android:src="@drawable/logo_fynotec"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="5dp"/>
+
+
+
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/iv_profile"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:src="@drawable/profile"
+            android:layout_gravity="center"
+            android:layout_marginTop="-50dp"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="8dp">
+
+            <TextView
+                android:id="@+id/tv_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="16dp"
+                android:text="@string/profile_account"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <ImageButton
+                android:id="@+id/btn_refresh"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:background="@null"
+                android:tint="#666666"
+                android:src="@drawable/ic_sync_black_24dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_margin="16dp"
+            android:background="@drawable/rounded_layout_white_card"
+            android:padding="8dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/profile_name"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:layout_margin="10dp"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.8dp"
+                    android:background="@color/vehicle_sub_menu"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/profile_last_name"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:layout_margin="10dp"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.8dp"
+                    android:background="@color/vehicle_sub_menu"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/profile_job_function"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:layout_margin="10dp"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.8dp"
+                    android:background="@color/vehicle_sub_menu"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/profile_phone"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:layout_margin="10dp"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.8dp"
+                    android:background="@color/vehicle_sub_menu"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/profile_cin"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:layout_margin="10dp"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.8dp"
+                    android:background="@color/vehicle_sub_menu"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/profile_address"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:layout_margin="10dp" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_user_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textSize="15sp"
+                    android:textColor="@color/vehicle_sub_menu"
+                    android:layout_margin="10dp"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.8dp"
+                    android:background="@color/vehicle_sub_menu"/>
+
+                <TextView
+                    android:id="@+id/tv_user_last_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textSize="15sp"
+                    android:textColor="@color/vehicle_sub_menu"
+                    android:layout_margin="10dp"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.8dp"
+                    android:background="@color/vehicle_sub_menu"/>
+
+                <TextView
+                    android:id="@+id/tv_user_job_function"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textSize="15sp"
+                    android:textColor="@color/vehicle_sub_menu"
+                    android:layout_margin="10dp"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.8dp"
+                    android:background="@color/vehicle_sub_menu"/>
+
+                <TextView
+                    android:id="@+id/tv_user_phone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textSize="15sp"
+                    android:textColor="@color/vehicle_sub_menu"
+                    android:layout_margin="10dp"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.8dp"
+                    android:background="@color/vehicle_sub_menu"/>
+
+                <TextView
+                    android:id="@+id/tv_user_cin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textSize="15sp"
+                    android:textColor="@color/vehicle_sub_menu"
+                    android:layout_margin="10dp"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.8dp"
+                    android:background="@color/vehicle_sub_menu"/>
+
+
+                <TextView
+                    android:id="@+id/tv_user_address"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textSize="15sp"
+                    android:textColor="@color/vehicle_sub_menu"
+                    android:layout_margin="10dp" />
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp">
+
+        <ImageButton
+            android:id="@+id/btn_menu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:padding="5dp"
+            android:background="@drawable/transparent"
+            android:src="@drawable/ic_menu_black_24dp"
+            android:tint="#fff"/>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/progress"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible">
+
+        <View
+            android:id="@+id/bg_dark"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#000"
+            android:alpha="0.5"
+            android:visibility="visible"/>
+
+        <!-- style="?android:attr/progressBarStyleHorizontal" -->
+        <ProgressBar
+            android:id="@+id/progressbar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:indeterminate="true"
+            android:max="100"
+            android:backgroundTint="#fff"
+            android:indeterminateTint="@color/colorAccent"
+            android:layout_marginTop="7dp"
+            android:layout_marginBottom="7dp"
+            android:layout_centerInParent="true"/>
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

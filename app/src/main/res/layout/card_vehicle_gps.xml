@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- First card for the related informations about the position of the vehicle -->
+<LinearLayout
+    android:id="@+id/container_gps"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/shadow"
+    android:layout_gravity="center">
+
+    <!-- Tab for more Informations -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/StyleLinearLayoutDetails"
+        android:weightSum="5">
+
+        <!-- Title -->
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="4.5"
+            android:text="GPS"
+            android:drawableStart="@drawable/ic_gps_signal"
+            android:drawablePadding="8dp"
+            android:singleLine="true"
+            android:textStyle="bold"
+            android:ellipsize="marquee"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+            android:layout_gravity="center"/>
+
+        <ImageButton
+            android:id="@+id/btn_reduce_gps"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:background="@drawable/transparent"
+            android:src="@drawable/ic_minus"
+            android:layout_gravity="center|right"
+            android:tag="false"
+            android:visibility="gone"/>
+
+
+    </LinearLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1.5dp"
+        android:background="#d1cdcd"
+        android:layout_marginStart="1dp"
+        android:layout_marginEnd="1dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/StyleLinearLayoutDetails"
+            android:weightSum="5">
+
+            <!-- Title -->
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/gps_box"
+                android:drawablePadding="8dp"
+                android:layout_weight="2"
+                android:ellipsize="marquee"
+                android:singleLine="true"
+                android:textColor="@color/vehicle_sub_menu"
+                android:textStyle="bold"
+                android:layout_gravity="center"/>
+
+            <!-- Value -->
+            <TextView
+                android:id="@+id/tv_gps_id"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/unavailable"
+                android:gravity="end"
+                android:layout_weight="3" />
+
+        </LinearLayout>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.3dp"
+            android:background="#d1cdcd"
+            android:layout_marginStart="1dp"
+            android:layout_marginEnd="1dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/StyleLinearLayoutDetails"
+            android:weightSum="5">
+
+            <!-- Title -->
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/sim_card"
+                android:drawablePadding="8dp"
+                android:layout_weight="2"
+                android:ellipsize="marquee"
+                android:singleLine="true"
+                android:textColor="@color/vehicle_sub_menu"
+                android:textStyle="bold"
+                android:layout_gravity="center"/>
+
+            <!-- Value -->
+            <TextView
+                android:id="@+id/tv_sim_card"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/unavailable"
+                android:gravity="end"
+                android:layout_weight="3" />
+
+        </LinearLayout>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.3dp"
+            android:background="#d1cdcd"
+            android:layout_marginStart="1dp"
+            android:layout_marginEnd="1dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/StyleLinearLayoutDetails"
+            android:weightSum="5">
+
+            <!-- Title -->
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/gps_state"
+                android:drawablePadding="8dp"
+                android:layout_weight="2"
+                android:ellipsize="marquee"
+                android:singleLine="true"
+                android:textColor="@color/vehicle_sub_menu"
+                android:textStyle="bold"
+                android:layout_gravity="center"/>
+
+            <!-- Value -->
+            <TextView
+                android:id="@+id/tv_gps_state"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/unavailable"
+                android:gravity="end"
+                android:layout_weight="3"
+                android:textStyle="bold"/>
+
+        </LinearLayout>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.3dp"
+            android:background="#d1cdcd"
+            android:layout_marginStart="1dp"
+            android:layout_marginEnd="1dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/StyleLinearLayoutDetails"
+            android:weightSum="5">
+
+            <!-- Title -->
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/vehicleLastSignal"
+                android:drawablePadding="8dp"
+                android:layout_weight="2"
+                android:ellipsize="marquee"
+                android:singleLine="true"
+                android:textColor="@color/vehicle_sub_menu"
+                android:textStyle="bold"
+                android:layout_gravity="center"/>
+
+            <!-- Value -->
+            <TextView
+                android:id="@+id/tv_last_signal_gps"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/unavailable"
+                android:gravity="end"
+                android:layout_weight="3"
+                android:textStyle="bold"/>
+
+        </LinearLayout>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.3dp"
+            android:background="#d1cdcd"
+            android:layout_marginStart="1dp"
+            android:layout_marginEnd="1dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/StyleLinearLayoutDetails"
+            android:weightSum="5">
+
+            <!-- Title -->
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/updated_at"
+                android:drawablePadding="8dp"
+                android:layout_weight="2"
+                android:ellipsize="marquee"
+                android:singleLine="true"
+                android:textColor="@color/vehicle_sub_menu"
+                android:textStyle="bold"
+                android:layout_gravity="center"/>
+
+            <!-- Value -->
+            <TextView
+                android:id="@+id/tv_gps_updated_at"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/unavailable"
+                android:gravity="end"
+                android:layout_weight="3" />
+
+        </LinearLayout>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.3dp"
+            android:background="#d1cdcd"
+            android:layout_marginStart="1dp"
+            android:layout_marginEnd="1dp"/>
+
+
+    </LinearLayout>
+
+</LinearLayout>

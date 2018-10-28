@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_splach"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.othmane.lamrani.fynoapp.ui.Splach"
+    android:background="@drawable/side_nav_bar"
+    android:paddingBottom="8dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true">
+
+        <ImageView
+            android:id="@+id/iv_splach"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_fyno_logo" />
+
+        <!--<TextView
+            android:id="@+id/tv_splach"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Welcome_splash"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+            android:textColor="#fff"
+            />-->
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/copyRight"
+        android:gravity="bottom|center"
+        android:layout_marginTop="20dp"
+        android:layout_alignParentBottom="true"
+        android:padding="7dp" />
+
+</RelativeLayout>

@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/rounded_layout_info_window_radius_10"
+    android:layout_margin="5dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/tv_licence_plate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="75482 A 59"
+                android:drawableLeft="@drawable/ic_car_black_24dp"
+                android:drawablePadding="5dp"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:gravity="center" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/backGround"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"/>
+
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="end">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/constructor"
+                        android:textSize="12sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/vehicle_sub_menu"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginBottom="5dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/vehicle_driver"
+                        android:textSize="12sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/vehicle_sub_menu"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginBottom="5dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/engine_state"
+                        android:textSize="12sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/vehicle_sub_menu"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginBottom="5dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/key_state"
+                        android:textSize="12sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/vehicle_sub_menu"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginBottom="5dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/vehicleSpeed"
+                        android:textSize="12sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/vehicle_sub_menu"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginBottom="5dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/vehicleLastSignal"
+                        android:textSize="12sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/vehicle_sub_menu"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginBottom="5dp"/>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tv_vehicle_type"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="FIAT Uno"
+                        android:textColor="#000"
+                        android:textSize="12sp"
+                        android:layout_marginBottom="5dp"
+                        />
+
+                    <TextView
+                        android:id="@+id/tv_driver_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Lamrani Othmane"
+                        android:textColor="#000"
+                        android:textSize="12sp"
+                        android:layout_marginBottom="5dp"/>
+
+                    <TextView
+                        android:id="@+id/tv_engine_state"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/vehicle_engine_is_on"
+                        android:textColor="#000"
+                        android:textSize="12sp"
+                        android:layout_marginBottom="5dp"/>
+
+                    <ImageView
+                        android:id="@+id/iv_key_state"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_key"
+                        android:textColor="#000"
+                        android:textSize="12sp"
+                        android:layout_marginBottom="5dp"/>
+
+                    <TextView
+                        android:id="@+id/tv_speed"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="77 Km/h"
+                        android:textColor="#000"
+                        android:textSize="12sp"
+                        android:layout_marginBottom="5dp"/>
+
+                    <TextView
+                        android:id="@+id/tv_last_signal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="22/05/2017, 08:42"
+                        android:textColor="#000"
+                        android:textSize="12sp"
+                        android:layout_marginBottom="5dp"/>
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="12sp"
+                    android:text="@string/vehicleCurrentAddress"
+                    android:textColor="@color/vehicle_sub_menu"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/tv_address"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000000"
+                    android:textSize="12sp"
+                    android:layout_marginLeft="5dp"
+                    android:text="49, El menzeh birami est, kenitra, Maroc" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_details"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorAccent"
+            android:text="@string/more"
+            android:gravity="end"
+            android:autoLink="email"/>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,400 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:CircleProgressView="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="@color/backGround">
+
+    <!--<LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="bottom">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/wallpaper"/>
+
+    </LinearLayout>-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <LinearLayout
+            android:id="@+id/container1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:paddingTop="10dp"
+            android:gravity="center"
+            android:background="@drawable/side_nav_bar"
+            android:paddingBottom="70dp">
+
+
+            <ImageView
+                android:id="@+id/iv_user_image_profile"
+                android:layout_width="wrap_content"
+                android:layout_height="70dp"
+                android:src="@drawable/logo_fynotec"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="5dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginBottom="5dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/home_welcome"
+                    android:textColor="#fff"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/tv_user_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Lamrani Othmane"
+                    android:textColor="#fff"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:singleLine="true"
+                    android:ellipsize="marquee"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_user_service"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#fff"
+                android:text="@string/unavailable"
+                android:layout_marginBottom="15dp"/>
+
+
+
+        </LinearLayout>
+
+
+
+        <!-- Cards -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="-70dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="5dp"
+            android:visibility="visible">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="8dp"
+                android:background="@drawable/shadow"
+                android:layout_marginBottom="5dp">
+
+                <!-- User vehicles stats -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:singleLine="true"
+                            android:ellipsize="marquee"
+                            android:textColor="@color/vehicle_sub_menu"
+                            android:text="@string/my_vehicles_general"
+                            android:textStyle="bold"
+                            android:textAllCaps="true"
+                            android:layout_gravity="center"
+                            android:gravity="center" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="end|center">
+
+                            <ImageButton
+                                android:id="@+id/btn_refresh_stats"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/transparent"
+                                android:src="@drawable/ic_refresh_black_24dp"
+                                android:tint="@color/vehicle_sub_menu"
+                                android:layout_marginEnd="8dp" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1.3dp"
+                        android:background="@color/backGround"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="10dp"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="130dp"
+                            android:gravity="center"
+                            android:weightSum="9">
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="3"
+                                android:orientation="vertical"
+                                android:weightSum="10"
+                                android:gravity="bottom">
+
+                                <at.grabner.circleprogress.CircleProgressView
+                                    android:id="@+id/circleView_vehicles_engine_on"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:layout_weight="6"
+                                    android:layout_gravity="center"
+                                    app:cpv_rimColor="@color/backGround"
+                                    app:cpv_barColor="@color/green"
+                                    app:cpv_rimWidth="8dp"
+                                    app:cpv_barWidth="10dp"/>
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:layout_weight="2"
+                                    android:gravity="center"
+                                    android:text="@string/home_engine_on" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="3"
+                                android:orientation="vertical"
+                                android:weightSum="10">
+
+                                <at.grabner.circleprogress.CircleProgressView
+                                    android:id="@+id/circleView_tolal_vehicles"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:layout_weight="8"
+                                    android:layout_gravity="center"
+                                    app:cpv_rimColor="@color/backGround"
+                                    app:cpv_barColor="@color/green"
+                                    app:cpv_rimWidth="8dp"
+                                    app:cpv_barWidth="10dp"/>
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:layout_weight="2"
+                                    android:gravity="center"
+                                    android:text="@string/home_total" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="3"
+                                android:orientation="vertical"
+                                android:weightSum="10"
+                                android:gravity="bottom">
+
+                                <at.grabner.circleprogress.CircleProgressView
+                                    android:id="@+id/circleView_sum_alerts"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:layout_weight="6"
+                                    android:layout_gravity="center"
+                                    app:cpv_rimColor="@color/backGround"
+                                    app:cpv_barColor="@color/red"
+                                    app:cpv_rimWidth="8dp"
+                                    app:cpv_barWidth="10dp"/>
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:layout_weight="2"
+                                    android:gravity="center"
+                                    android:text="@string/home_alerts" />
+
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="10dp"
+                android:background="@drawable/shadow"
+                android:visibility="gone">
+
+                <!-- User actions -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:singleLine="true"
+                        android:ellipsize="marquee"
+                        android:textColor="#000"
+                        android:text="@string/my_actions"
+                        android:textStyle="bold"/>
+
+
+
+
+                    <!-- Paramètres -->
+                    <LinearLayout
+                        android:id="@+id/btn_settings"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:weightSum="10"
+                        android:soundEffectsEnabled="true">
+
+                        <TextView
+                            android:id="@+id/textView2"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="8"
+                            android:singleLine="true"
+                            android:ellipsize="marquee"
+                            android:padding="5dp"
+                            android:text="@string/home_settings"
+                            android:textAllCaps="false"
+                            android:textColor="#000" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shadow"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp">
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_car_black_36dp"
+                android:tint="@color/vehicle_sub_menu"
+                android:background="@null"
+                android:layout_margin="15dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="12dp"
+                android:layout_marginBottom="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:ellipsize="marquee"
+                    android:textColor="@color/vehicle_sub_menu"
+                    android:text="@string/real_time_tracking"
+                    android:textStyle="bold"
+                    android:textAllCaps="true"
+                    android:layout_marginBottom="4dp"
+                    android:paddingEnd="4dp"
+                    android:paddingStart="4dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/home_realtime_tracking_description"
+                    android:layout_marginBottom="8dp"
+                    android:paddingEnd="4dp"
+                    android:paddingStart="4dp"/>
+
+                <Button
+                    android:id="@+id/btn_equipments_home"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:minHeight="0dp"
+                    android:minWidth="0dp"
+                    style="@style/Base.Widget.AppCompat.Button.Borderless"
+                    android:textColor="@color/vehicle_sub_menu"
+                    android:text="@string/home_list_vehicles"
+                    android:background="@drawable/rounded_layout_blue_radius_5"
+                    android:backgroundTint="#c5e0f5"
+                    android:layout_marginStart="4dp"
+                    android:layout_marginEnd="4dp"
+                    android:padding="10dp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp">
+
+        <ImageButton
+            android:id="@+id/btn_menu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:padding="5dp"
+            android:background="@drawable/transparent"
+            android:src="@drawable/ic_menu_black_24dp"
+            android:tint="#fff"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

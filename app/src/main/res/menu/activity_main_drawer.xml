@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_home_black_18dp"
+            android:title="@string/title_activity_home" />
+        <item
+            android:id="@+id/nav_equipments"
+            android:icon="@drawable/ic_car_black_18dp"
+            android:title="@string/home_equipment" />
+        <item
+            android:id="@+id/nav_alerts"
+            android:icon="@drawable/ic_alert_black_18dp"
+            android:title="@string/home_alerts" />
+        <item
+            android:id="@+id/nav_history"
+            android:icon="@drawable/ic_history_black_18dp"
+            android:title="@string/home_history" />
+        <item
+            android:id="@+id/nav_settings"
+            android:icon="@drawable/ic_settings_black_18dp"
+            android:title="@string/home_settings" />
+
+        <!--<item
+            android:id="@+id/nav_contact"
+            android:icon="@drawable/ic_information_variant_black_48dp"
+            android:title="@string/contact_us" />-->
+    </group>
+
+    <item android:title="@string/account">
+        <menu>
+            <item
+                android:id="@+id/nav_profile"
+                android:icon="@drawable/ic_account_black_18dp"
+                android:title="@string/profile"
+                android:checkable="true"/>
+            <item
+                android:id="@+id/nav_logout"
+                android:icon="@drawable/ic_logout_black_18dp"
+                android:title="@string/logout" />
+        </menu>
+    </item>
+
+    <item
+        android:id="@+id/nav_equipment_details"
+        android:title="Equipment details"
+        android:visible="false"/>
+
+</menu>

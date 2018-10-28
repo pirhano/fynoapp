@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/shadow"
+    android:layout_gravity="center">
+
+    <!-- Tab for vehistopDatatops -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/StyleLinearLayoutDetails"
+        android:weightSum="5">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:src="@drawable/route"
+                android:tint="@color/vehicle_sub_menu"
+                android:layout_marginLeft="-17dp" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="24dp"
+                android:layout_weight="4.5"
+                android:text="@string/list_trips"
+                android:singleLine="true"
+                android:textStyle="bold"
+                android:ellipsize="marquee"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+                android:layout_gravity="center"/>
+
+        </LinearLayout>
+
+
+        <ImageButton
+            android:id="@+id/btn_reduceTrips"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:background="@drawable/transparent"
+            android:src="@drawable/ic_minus"
+            android:layout_gravity="center|right"
+            android:tag="false"
+            android:visibility="gone"/>
+
+    </LinearLayout>
+
+
+
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1.5dp"
+        android:background="#d1cdcd"
+        android:layout_marginStart="1dp"
+        android:layout_marginEnd="1dp"/>
+
+    <LinearLayout
+        android:id="@+id/btn_choose_day"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_margin="10dp">
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/transparent"
+            android:src="@drawable/ic_calendar_range_black_24dp"
+            android:tag="false"
+            android:layout_marginEnd="10dp"/>
+
+        <TextView
+            android:id="@+id/tv_trip_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/today"
+            android:textStyle="bold"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/tv_load_vehicle_trips"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ProgressBar
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:indeterminate="true"
+                android:layout_margin="10dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/loading_data"
+                android:gravity="center"
+                android:layout_marginBottom="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="10dp"/>
+
+        </LinearLayout>
+
+        <CheckBox
+            android:id="@+id/check_select_all"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sélectionner tout"
+            android:visibility="gone"/>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/tripsRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:visibility="visible"/>
+
+    </LinearLayout>
+
+</LinearLayout>

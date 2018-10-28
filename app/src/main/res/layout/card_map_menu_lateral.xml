@@ -1,0 +1,433 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:weightSum="3"
+    android:gravity="end">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="2"
+        android:gravity="end"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#fff"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/action_settings"
+                android:background="@color/colorPrimary"
+                android:textSize="18sp"
+                android:textColor="#fff"
+                android:padding="15dp"
+                android:textStyle="bold"/>
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingStart="10dp"
+                    android:paddingEnd="10dp"
+                    android:isScrollContainer="true">
+
+                    <LinearLayout
+                        android:id="@+id/btn_general"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:padding="10dp"
+                        android:weightSum="4">
+
+                        <ImageView
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ic_information_variant_black_24dp"
+                            android:layout_gravity="center"
+                            android:tint="@color/vehicle_sub_menu"
+                            android:layout_marginEnd="20dp"/>
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_weight="4"
+                            android:layout_height="wrap_content"
+                            android:text="General"
+                            android:singleLine="true"
+                            android:ellipsize="marquee"
+                            android:textStyle="bold"
+                            android:textColor="@color/vehicle_sub_menu"
+                            android:layout_gravity="center"/>
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/backGround"/>
+
+                    <LinearLayout
+                        android:id="@+id/btn_vehicle_position"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:padding="10dp"
+                        android:weightSum="4">
+
+                        <ImageView
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ic_crosshairs_gps_black_24dp"
+                            android:layout_gravity="center"
+                            android:tint="@color/vehicle_sub_menu"
+                            android:layout_marginEnd="20dp"/>
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_weight="4"
+                            android:layout_height="wrap_content"
+                            android:text="@string/menu_vehicle_position"
+                            android:singleLine="true"
+                            android:ellipsize="marquee"
+                            android:textStyle="bold"
+                            android:textColor="@color/vehicle_sub_menu"
+                            android:layout_gravity="center"/>
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/backGround"/>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:padding="10dp"
+                        android:weightSum="4">
+
+                        <ImageView
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ic_sync_black_24dp"
+                            android:layout_gravity="center"
+                            android:tint="@color/vehicle_sub_menu"
+                            android:layout_marginEnd="20dp"/>
+
+                        <Switch
+                            android:id="@+id/switch_real_time"
+                            android:layout_width="0dp"
+                            android:layout_weight="3"
+                            android:layout_height="wrap_content"
+                            android:text="@string/menu_real_time"
+                            android:textOn="@string/enabled"
+                            android:textColor="@color/vehicle_sub_menu"
+                            android:textStyle="bold"
+                            android:textOff="@string/disabled" />
+
+                    </LinearLayout>
+
+
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/backGround"/>
+
+                    <LinearLayout
+                        android:id="@+id/btn_actions"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:padding="10dp"
+                        android:weightSum="4">
+
+                        <ImageView
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ic_pencil_black_24dp"
+                            android:layout_gravity="center"
+                            android:tint="@color/vehicle_sub_menu"
+                            android:layout_marginEnd="20dp"/>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="3"
+                            android:weightSum="4">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="3"
+                                android:text="@string/menu_entities"
+                                android:drawablePadding="5dp"
+                                android:singleLine="true"
+                                android:textColor="@color/vehicle_sub_menu"
+                                android:ellipsize="marquee"
+                                android:textStyle="bold"
+                                android:layout_gravity="center"/>
+
+                            <ImageView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:tint="@color/vehicle_sub_menu"
+                                android:layout_gravity="end|center"
+                                android:src="@drawable/ic_arrow_down_drop_circle_black_18dp"/>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/container_map_actions"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginStart="15dp"
+                    android:padding="5dp"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <Switch
+                        android:id="@+id/switch_load_today_stops"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/menu_today_stops"
+                        android:textColor="#666666"
+                        android:visibility="visible" />
+
+                    <Switch
+                        android:id="@+id/switch_load_user_zones"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/menu_user_zones"
+                        android:textColor="#666666"
+                        android:visibility="visible" />
+
+
+                    <Switch
+                        android:id="@+id/switch_load_today_path"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/menu_today_route"
+                        android:textColor="#666666"/>
+
+                </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/backGround"/>
+
+                    <LinearLayout
+                        android:id="@+id/btn_trips"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:padding="10dp"
+                        android:weightSum="4">
+
+                        <ImageView
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="24dp"
+                            android:src="@drawable/route"
+                            android:layout_gravity="center"
+                            android:tint="@color/vehicle_sub_menu"
+                            android:layout_marginEnd="20dp"/>
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_weight="4"
+                            android:layout_height="wrap_content"
+                            android:text="@string/list_trips"
+                            android:drawablePadding="5dp"
+                            android:singleLine="true"
+                            android:textColor="@color/vehicle_sub_menu"
+                            android:ellipsize="marquee"
+                            android:textStyle="bold"
+                            android:layout_gravity="center"/>
+
+                    </LinearLayout>
+
+
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/backGround"/>
+
+                    <LinearLayout
+                        android:id="@+id/btn_speed"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginTop="5dp"
+                        android:padding="10dp"
+                        android:weightSum="4">
+
+                        <ImageView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginEnd="20dp"
+                            android:layout_weight="1"
+                            android:tint="@color/vehicle_sub_menu"
+                            android:src="@drawable/ic_speedometer_black_24dp" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="4"
+                            android:drawablePadding="5dp"
+                            android:ellipsize="marquee"
+                            android:singleLine="true"
+                            android:textColor="@color/vehicle_sub_menu"
+                            android:textStyle="bold"
+                            android:text="@string/menu_vehicle_speed" />
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/backGround"/>
+
+                    <LinearLayout
+                        android:id="@+id/btn_history"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:padding="10dp"
+                        android:weightSum="4">
+
+                        <ImageView
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ic_history_black_24dp"
+                            android:layout_gravity="center"
+                            android:tint="@color/vehicle_sub_menu"
+                            android:layout_marginEnd="20dp"/>
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_weight="4"
+                            android:layout_height="wrap_content"
+                            android:text="@string/menu_vehicle_history"
+                            android:drawablePadding="5dp"
+                            android:singleLine="true"
+                            android:textColor="@color/vehicle_sub_menu"
+                            android:ellipsize="marquee"
+                            android:textStyle="bold"
+                            android:layout_gravity="center"/>
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/backGround"/>
+
+                    <LinearLayout
+                        android:id="@+id/btn_details"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:padding="10dp"
+                        android:weightSum="4">
+
+                        <ImageView
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ic_more_black_24dp"
+                            android:layout_gravity="center"
+                            android:tint="@color/vehicle_sub_menu"
+                            android:layout_marginEnd="20dp"/>
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_weight="4"
+                            android:layout_height="wrap_content"
+                            android:text="@string/menu_vehicle_details"
+                            android:drawablePadding="5dp"
+                            android:singleLine="true"
+                            android:textColor="@color/vehicle_sub_menu"
+                            android:ellipsize="marquee"
+                            android:textStyle="bold"
+                            android:layout_gravity="center"/>
+
+                    </LinearLayout>
+
+                    <!--<View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/backGround"/>
+
+                    <LinearLayout
+                        android:id="@+id/btn_gps"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginTop="5dp"
+                        android:padding="10dp"
+                        android:weightSum="4">
+
+                        <ImageView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginEnd="20dp"
+                            android:layout_weight="1"
+                            android:tint="@color/vehicle_sub_menu"
+                            android:src="@drawable/ic_crosshairs_gps_black_24dp" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="4"
+                            android:drawablePadding="5dp"
+                            android:ellipsize="marquee"
+                            android:singleLine="true"
+                            android:textColor="@color/vehicle_sub_menu"
+                            android:textStyle="bold"
+                            android:text="@string/GPS" />
+
+                    </LinearLayout>-->
+
+                </LinearLayout>
+
+            </ScrollView>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

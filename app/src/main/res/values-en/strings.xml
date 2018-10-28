@@ -1,0 +1,301 @@
+<resources>
+    <string name="app_name">Fyno</string>
+    <string name="french">French</string>
+    <string name="english">English</string>
+    <string name="arab">Arabic</string>
+
+    <string name="copyRight">© FynoTec 2009 &#8211; 2018</string>
+
+    <string name="network_disabled">Please check your network and retry</string>
+    <string name="connect_network">Connect</string>
+    <string name="network_weak">The connection timeout has occurred. Please try again.</string>
+    <string name="intern_error">An intern error has occurred, please verify your internet connection.</string>
+    <string name="loading_data">Please wait, we are loading data.</string>
+    <string name="unavailable">Unavailable</string>
+    <string name="none_alert">None</string>
+    <string name="none_engine_on">None</string>
+    <string name="yes">On</string>
+    <string name="no">Off</string>
+    <string name="since">since</string>
+    <string name="today">Today</string>
+    <string name="loading">Loading data …</string>
+    <string name="loading_message">Loading</string>
+    <string name="loading_cancelled">Loading data cancelled</string>
+    <string name="grant_permission">Please you have to grant some permissions</string>
+
+    <string name="day">jour(s)</string>
+
+    <!-- //*********************** Splash activity ***************** -->
+
+    <string name="Welcome_splash">Welcome</string>
+
+    <!-- //*********************** LoginResponse activity ***************** -->
+
+    <string name="login_username">Username</string>
+    <string name="login_username_hint">Username</string>
+    <string name="login_password">Password</string>
+    <string name="login_password_hint">Password</string>
+    <string name="login_btn">Log in</string>
+    <string name="login_forget_password">Forgot your password ?</string>
+    <string name="login_register1">Not a member yet ? </string>
+    <string name="login_register2">" Register"</string>
+    <string name="bad_username_and_password">Bad credentials </string>
+    <string name="bad_username">Please verify your username</string>
+    <string name="bad_pasword">Please verify your password </string>
+    <string name="remember_me">Remember me</string>
+
+    <!-- //*********************** Profile activity ***************** -->
+
+    <string name="profile_name">First name</string>
+    <string name="profile_last_name">Last name</string>
+    <string name="profile_phone">Phone</string>
+    <string name="profile_cin">CIN</string>
+    <string name="profile_address">Address</string>
+    <string name="profile_job_function">Function</string>
+    <string name="profile_account">My account</string>
+
+
+    <!-- //*********************** Settings activity ***************** -->
+
+    <string name="title_activity_settings">Settings</string>
+
+    <!-- Default language -->
+    <string name="default_language">@string/french</string>
+
+    <!-- string array for settings screen -->
+    <string-array name="language_list">
+        <item>@string/french</item>
+        <item>@string/english</item>
+        <item>@string/arab</item>
+    </string-array>
+
+    <string-array name="language_values">
+        <item>fr</item>
+        <item>en</item>
+        <item>ar</item>
+    </string-array>
+
+    <!-- pref auto reload -->
+
+    <string name="disabled">Disabled</string>
+    <string name="enabled">Enabled</string>
+    <string name="auto_refresh_30_seconds">Every 30 secondes</string>
+    <string name="auto_refresh_60_seconds">Every 60 secondes</string>
+    <string name="auto_refresh_2_minutes">Every 2 minutes</string>
+
+    <string-array name="auto_refresh_list">
+        <item>@string/disabled</item>
+        <item>@string/auto_refresh_30_seconds</item>
+        <item>@string/auto_refresh_60_seconds</item>
+        <item>@string/auto_refresh_2_minutes</item>
+    </string-array>
+
+    <string-array name="auto_reload_values">
+        <item>0</item>
+        <item>30</item>
+        <item>60</item>
+        <item>180</item>
+    </string-array>
+
+    <!-- PstopDatatops -->
+    <string name="stops_greater_5_min">Greater than 5 minutes</string>
+    <string name="stops_less_5_min">Less than 5 minutes</string>
+    <string name="stops_greater_10_min">Greater than 10 minutes</string>
+    <string name="stops_greater_20_mins">Greater than 20 minutes</string>
+
+    <string-array name="stop_list">
+        <item>@string/disabled</item>
+        <item>@string/stops_less_5_min</item>
+        <item>@string/stops_greater_5_min</item>
+        <item>@string/stops_greater_10_min</item>
+        <item>@string/stops_greater_20_mins</item>
+    </string-array>
+
+    <string-array name="stop_values">
+        <item>0</item>
+        <item>5</item>
+        <item>10</item>
+        <item>20</item>
+    </string-array>
+
+
+    <!-- preferences keys -->
+    <string name="key_user_name">user_name</string>
+    <string name="key_notifications">notifications</string>
+    <string name="key_language">language</string>
+    <string name="key_stops">stop</string>
+    <string name="key_auto_reload">auto_reload</string>
+
+    <!-- preferences messages -->
+    <string name="pref_title_userName">Full name</string>
+    <string name="pref_summary_userName">Enter your full name</string>
+
+    <string name="preference_general">General</string>
+    <string name="pref_title_notifications">Notifications</string>
+    <string name="pref_summary_notificationsOn">Notifications enabled</string>
+    <string name="pref_summary_notificationsOff">Notifications disabled</string>
+
+    <string name="pref_title_language">Language</string>
+    <string name="pref_summary_language">Select your language</string>
+
+    <string name="preference_geolocation">Geolocalisation</string>
+    <string name="pref_title_stops">Stops des véhicules</string>
+    <string name="pref_title_auto_reload">Auto refresh de la carte</string>
+
+    <string name="preference_profile">Mon compte</string>
+    <string name="pref_title_user_profile">Mon profil</string>
+    <string name="pref_title_logout">Se déconnecter</string>
+
+    <!-- //*********************** Home activity ***************** -->
+
+    <string name="title_activity_home">Home</string>
+
+    <string name="home_welcome">"Welcome, "</string>
+    <string name="home_alert_prefix">"You have "</string>
+    <string name="home_alert_suffix">" alert(s)"</string>
+    <string name="home_equipment">Equipments</string>
+    <string name="home_alerts">Alerts</string>
+    <string name="home_history">History</string>
+    <string name="home_category_1">Catégory undefined</string>
+    <string name="home_category_2">Catégoriy undefined</string>
+    <string name="home_settings">Settings</string>
+
+    <string name="home_total">Equipment</string>
+    <string name="home_engine_on">Engine on</string>
+    <string name="home_gps_unavailable">GPS Error</string>
+
+    <string name="logout">Logout</string>
+    <string name="profile">Profile</string>
+
+    <string name="contact_us">Contact us</string>
+
+    <string name="account">My account</string>
+
+    <string name="vehicles_engine_on">Engine on</string>
+    <string name="my_actions">My actions</string>
+    <string name="my_vehicles_general">My vehicles</string>
+
+    <string name="home_list_vehicles">All equipments</string>
+
+    <string name="total">Total</string>
+
+    <string name="real_time_tracking">Real time tracking</string>
+
+    <string name="home_realtime_tracking_description">Our application provides real time tracking system using our own maps "MDINTI Maps".</string>
+
+
+    <!-- //*********************** Equipment activity ***************** -->
+
+    <string name="title_activity_equipment">My vehicles</string>
+
+    <string name="empty_equipment_list">Any vehicle found</string>
+
+    <string name="tab1_equipment">List</string>
+    <string name="tab2_equipment">Map</string>
+    <string name="tab3_equipment">Stops</string>
+
+    <!-- //*********************** Equipment history activity ***************** -->
+
+    <string name="tab1_history">Stops</string>
+    <string name="tab2_history">Itinerary</string>
+    <string name="tab3_history">Alerts</string>
+
+
+    <!-- // ********************* Equipment details activity ******************** -->
+
+    <string name="title_activity_equipment_details">Vehicle</string>
+    <string name="action_settings">Settings</string>
+    <string name="action_refresh">Refresh</string>
+
+    <string name="vehicle_map">Map</string>
+    <string name="vehicle_general_info">General informations</string>
+    <string name="vehicleCurrentAddress">Address</string>
+    <string name="vehicleId">License plates</string>
+    <string name="vehicleLastSignal">Last signal</string>
+    <string name="vehicle_driver">Driver</string>
+
+    <string name="constructor">Type</string>
+    <string name="key_state">Key</string>
+    <string name="move_state">Movement</string>
+    <string name="engine_state">Engine</string>
+
+    <string name="more">More details</string>
+    <string name="tracking">Real time tracking</string>
+    <string name="counter">Counter</string>
+    <string name="timer">Timer</string>
+    <string name="vehicleCardConsumption">Consumption</string>
+    <string name="fuel_level">Fuel consumption</string>
+    <string name="max_speed">Max. speed</string>
+    <string name="first_activity">1° activity</string>
+    <string name="first_key_on">1° key on</string>
+    <string name="first_engine_on">1° engine on</string>
+
+
+    <string name="vehicleSpeed">Speed</string>
+    <string name="vehicle_engine_is_on">Engine on</string>
+    <string name="vehicle_engine_is_off">Engine off</string>
+
+    <string name="GPS">GPS</string>
+    <string name="gps_box">id </string>
+    <string name="sim_card">SIM card</string>
+    <string name="gps_state">State</string>
+    <string name="gps_enabled">available</string>
+    <string name="gps_disabled">unavailable</string>
+    <string name="updated_at">Last update</string>
+
+    <string name="real_time_data">Real time data</string>
+
+    <string name="loadTodayPath">Load today trajectory</string>
+    <string name="loadTodayStops">Load today stops</string>
+    <string name="load_user_zones">Load my areas</string>
+    <string name="today_path_cancelled">Loading today itinerary cancelled</string>
+    <string name="today_path_not_found">Empty route result</string>
+
+    <string name="list_trips">Trips list</string>
+    <string name="trip_duration">Duration</string>
+    <string name="trip_distance">Distance</string>
+    <string name="trip_start">Begin</string>
+    <string name="trip_end">End</string>
+
+    <string name="list_stops">Stops list</string>
+    <string name="stop_time">Duration</string>
+    <string name="begin_stop">From</string>
+    <string name="end_stop">To</string>
+    <string name="stop_distance_counter">Counter</string>
+    <string name="stop_time_counter">Timer</string>
+    <string name="today_stops_cancelled">Loading today stops cancelled</string>
+    <string name="today_stops_not_found">Empty stops result</string>
+    <string name="still_stopped">Still stopped</string>
+
+
+    <string name="menu_vehicle_informations">Informations</string>
+    <string name="menu_vehicle_position">Location</string>
+    <string name="menu_vehicle_details">Details</string>
+    <string name="menu_real_time">Real time</string>
+    <string name="menu_vehicle_stops">Stops</string>
+    <string name="menu_vehicle_speed">Speed</string>
+    <string name="menu_vehicle_history">History</string>
+    <string name="menu_entities">Entities</string>
+    <string name="menu_today_route">Today route</string>
+    <string name="menu_today_stops">Today stops</string>
+    <string name="menu_user_zones">My areas</string>
+
+    <!-- // ********************* Confirmations ******************** -->
+
+    <string name="confirm_logout">Do you really want to logout from your account ?</string>
+    <string name="confirm_enable_real_time">Do you really want to enable real time tracking ?</string>
+    <string name="confirm_disable_real_time">Do you really want to disable real time tracking ?</string>
+    <string name="confirm">Yes</string>
+    <string name="cancel">Cancel</string>
+
+    <!-- // ********************* Navgation drawer ******************** -->
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+
+    <!-- // ********************* Vehicle speeed******************** -->
+    <string name="speed_description">Speed variation (Km/h)</string>
+
+
+</resources>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory
+        android:title="@string/preference_general">
+
+        <!--<EditTextPreference
+            android:key="@string/key_user_name"
+            android:title="@string/pref_title_userName"
+            android:summary="@string/pref_summary_userName"/>
+
+        <SwitchPreference
+            android:key="@string/key_notifications"
+            android:title="@string/pref_title_notifications"
+            android:soundEffectsEnabled="true"
+            android:defaultValue="true"
+            android:summaryOn="@string/pref_summary_notificationsOn"
+            android:summaryOff="@string/pref_summary_notificationsOff"/>-->
+
+        <ListPreference
+            android:key="@string/key_language"
+            android:title="@string/pref_title_language"
+            android:summary="@string/pref_summary_language"
+            android:entries="@array/language_list"
+            android:defaultValue="fr"
+            android:entryValues="@array/language_values" />
+
+    </PreferenceCategory>
+
+
+    <!--<PreferenceCategory
+        android:title="@string/preference_geolocation">
+
+        <SwitchPreference
+            android:key="@string/key_notifications"
+            android:title="@string/real_time_data"
+            android:soundEffectsEnabled="true"
+            android:defaultValue="true" />
+
+    </PreferenceCategory>-->
+
+
+</PreferenceScreen>

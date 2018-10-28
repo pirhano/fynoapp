@@ -1,0 +1,55 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 26
+    buildToolsVersion '26.0.2'
+    defaultConfig {
+        applicationId "com.othmane.lamrani.fynoapp"
+        minSdkVersion 22
+        targetSdkVersion 26
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    compile 'com.android.support:appcompat-v7:26.1.0'
+    compile 'com.android.support:design:26.1.0'
+    // Image transforming (rounded corners)
+    compile 'com.makeramen:roundedimageview:2.3.0'
+    // Picasso for loading images into ImageView
+    compile 'com.squareup.picasso:picasso:2.5.2'
+    compile 'jp.wasabeef:picasso-transformations:2.1.2'
+    // Image slider
+    compile 'com.nineoldandroids:library:2.4.0'
+    compile 'com.daimajia.slider:library:1.1.5@aar'
+    // Retrofit
+    compile 'com.squareup.retrofit2:retrofit:2.3.0'
+    compile 'com.squareup.retrofit2:converter-gson:2.3.0'
+    // Recycler view
+    compile 'com.android.support:recyclerview-v7:26.1.0'
+    // Osmdroid library
+    compile 'org.osmdroid:osmdroid-android:5.6.5'
+    //compile 'org.osmdroid:osmdroid-android:6.0.1'
+    //compile 'org.osmdroid:osmdroid-android:6.0.0-SNAPSHOT'
+    //Osmdroid bonus pack
+    compile 'com.github.MKergall:osmbonuspack:6.4'
+    // Constraint layout
+    compile 'com.android.support.constraint:constraint-layout:1.0.2'
+    // Charts
+    compile 'com.github.PhilJay:MPAndroidChart:v3.0.2'
+    // circle progress
+    compile 'com.github.jakob-grabner:Circle-Progress-View:v1.3'
+    testCompile 'junit:junit:4.12'
+}

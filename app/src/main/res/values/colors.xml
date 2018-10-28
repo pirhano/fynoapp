@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+</resources>
+-->
+<resources>
+    <color name="colorPrimary">#64b5f6</color>
+    <color name="colorPrimaryDark">#56b2fc</color>
+    <color name="colorAccent">#90caf9</color>
+
+    <color name="backGround">#cfd8dc</color>
+    <color name="vehicle_sub_menu">#407b96</color>
+    <color name="vehicle_type">#3f9df5</color>
+    <color name="orange">#fa8f04</color>
+    <color name="red">#f56664</color>
+    <color name="green">#7bd9a0</color>
+    <color name="app_bar">#c5e0f5</color>
+</resources>
