@@ -406,6 +406,10 @@ public class FragmentEquipmentDetails extends RequestPermission implements MainA
         while (i<10){
             polylines.add(polyline);
             direction_markers.add(directions);
+            /// Hicham : stop_markers accept List<List<Marker>> meanwhile 'marker' is Marker.
+            /// 2 possible solutions : 1 - change List<List<Marker>> to List<Marker>.
+            /// 2 - marker has to be List<Marker>.
+            /// in a different way stop_markers.add(int , List<Marker>) but we are giving it stop_markers.add(int , Marker).
             stop_markers.add(stop_marker);
             i++;
         }
@@ -1142,6 +1146,10 @@ public class FragmentEquipmentDetails extends RequestPermission implements MainA
             map.getOverlays().add(marker);
 
             // add those markers to the map
+            /// Hicham : stop_markers accept List<List<Marker>> meanwhile 'marker' is Marker.
+            /// 2 possible solutions : 1 - change List<List<Marker>> to List<Marker>.
+            /// 2 - marker has to be List<Marker>.
+            /// in a different way stop_markers.add(int , List<Marker>) but we are giving it stop_markers.add(int , Marker).
             stop_markers.add(position, marker);
         }
     }
