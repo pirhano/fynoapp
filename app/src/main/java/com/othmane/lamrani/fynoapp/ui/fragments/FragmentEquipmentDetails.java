@@ -5,8 +5,10 @@ import android.content.Context;
 import android.content.res.ColorStateList;
 import android.graphics.Color;
 import android.graphics.drawable.Drawable;
+import android.os.Build;
 import android.os.Bundle;
 import android.os.Handler;
+import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.support.design.widget.Snackbar;
 import android.support.v4.app.Fragment;
@@ -61,8 +63,11 @@ import org.osmdroid.views.overlay.Marker;
 import org.osmdroid.views.overlay.Polyline;
 import org.osmdroid.views.overlay.infowindow.InfoWindow;
 import java.util.ArrayList;
+import java.util.Collection;
 import java.util.Iterator;
 import java.util.List;
+import java.util.ListIterator;
+
 import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
@@ -402,6 +407,13 @@ public class FragmentEquipmentDetails extends RequestPermission implements MainA
         int i=0;
         Polyline polyline = new Polyline();
         List<Marker> directions = new ArrayList<Marker>();
+        List<Marker> listOfMarkers = new ArrayList<Marker>(){
+            @Override
+            public boolean add(Marker marker) {
+                return super.add(new Marker(map));
+            }
+        };
+
         Marker stop_marker = new Marker(map);
         while (i<10){
             polylines.add(polyline);
@@ -410,7 +422,7 @@ public class FragmentEquipmentDetails extends RequestPermission implements MainA
             /// 2 possible solutions : 1 - change List<List<Marker>> to List<Marker>.
             /// 2 - marker has to be List<Marker>.
             /// in a different way stop_markers.add(int , List<Marker>) but we are giving it stop_markers.add(int , Marker).
-            stop_markers.add(stop_marker);
+            stop_markers.add(listOfMarkers);
             i++;
         }
         //polylines.add(null);
@@ -609,7 +621,10 @@ public class FragmentEquipmentDetails extends RequestPermission implements MainA
                 id_icon = R.drawable.ic_sm_green_4;
             }
 
-            Drawable icon = getActivity().getResources().getDrawable(id_icon, null);
+            Drawable icon = null;
+            if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.LOLLIPOP) {
+                icon = getActivity().getResources().getDrawable(id_icon, null);
+            }
 
             vehicleMarker.setIcon(icon);
 
@@ -834,10 +849,12 @@ public class FragmentEquipmentDetails extends RequestPermission implements MainA
 
             btn_map_menu = (ImageButton) getView().findViewById(R.id.btn_map_menu);
 
-            switch_real_time = (Switch) getView().findViewById(R.id.switch_real_time);
-            switch_load_todayPath = (Switch) getView().findViewById(R.id.switch_load_today_path);
-            switch_load_today_stops = (Switch) getView().findViewById(R.id.switch_load_today_stops);
-            switch_load_user_zones = (Switch) getView().findViewById(R.id.switch_load_user_zones);
+            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.ICE_CREAM_SANDWICH) {
+                switch_real_time = (Switch) getView().findViewById(R.id.switch_real_time);
+                switch_load_todayPath = (Switch) getView().findViewById(R.id.switch_load_today_path);
+                switch_load_today_stops = (Switch) getView().findViewById(R.id.switch_load_today_stops);
+                switch_load_user_zones = (Switch) getView().findViewById(R.id.switch_load_user_zones);
+            }
 
 
             btn_map_vehicle_position = (LinearLayout) getView().findViewById(R.id.btn_vehicle_position);
@@ -1150,7 +1167,13 @@ public class FragmentEquipmentDetails extends RequestPermission implements MainA
             /// 2 possible solutions : 1 - change List<List<Marker>> to List<Marker>.
             /// 2 - marker has to be List<Marker>.
             /// in a different way stop_markers.add(int , List<Marker>) but we are giving it stop_markers.add(int , Marker).
-            stop_markers.add(position, marker);
+            stop_markers.add(position, new ArrayList<Marker>(){
+                @Override
+                public boolean add(Marker marker) {
+
+                    return super.add(new Marker(map));
+                }
+            });
         }
     }
 
